@@ -19,7 +19,9 @@
        <li><a href="catalog.html">Магазин</a></li>
        <li><a href="contacts.html">Контакты</a></li>
      </ul>
-     <a href="basket.html">Корзина</a>
+     <a href="basket.html">
+       <img src="img/cart-icon.svg" alt="basket">
+       Корзина</a>
    </nav>
  </header>
 
@@ -34,28 +36,49 @@
   </section>
    -->
 
-   <section>
+   <form class="filter" method="post" action="#">
      <div>
        <p>Сетка</p>
        <ul>
-         <li><input type="radio" name="Адаптив" value="adaptive">Адаптив</li>
-         <li><input type="radio" name="Фиксированная" value="Fixs">Фиксированная</li>
-         <li><input type="radio" name="Резиновая" value="Rezin">Резиновая</li>
+         <li>
+           <input type="radio" name="Адаптив" value="adaptive" id="adaptiv">
+           <label for="adaptiv">Адаптивная</label>
+         </li>
+         <li>
+           <input type="radio" name="Фиксированная" value="fix" id="fix">
+           <label for="fix">Фиксированная</label>
+         </li>
+         <li>
+           <input type="radio" name="Резиновая" value="Rezin" id="rez">
+           <label for="rez">Резиновая</label>
+         </li>
          </ul>
        </div>
 
     <p>Особенности</p>
        <div>
          <ul>
-           <li><input type="checkbox" name="Слайдер" value="Slider">Слайдер</li>
-           <li><input type="checkbox" name="Блок преимуществ" value="Features">Блок преимуществ</li>
-           <li><input type="checkbox" name="Новости" value="News">Новости</li>
-           <li><input type="checkbox" name="Галерея" value="Gallery">Галерея</li>
+           <li>
+             <input type="checkbox" name="Слайдер" value="Slider" id="slide">
+             <label for="slide">Слайдер</label>
+           </li>
+           <li>
+             <input type="checkbox" name="Блок преимуществ" value="Features" id="feat">
+             <label for="feat">Блок преимуществ</label>
+           </li>
+           <li>
+             <input type="checkbox" name="Новости" value="News" id="new">
+             <label for="new">Новости</label>
+           </li>
+           <li>
+             <input type="checkbox" name="Галерея" value="Gallery" id="gal">
+             <label for="gal">Галерея</label>
+           </li>
            <li><input type="checkbox" name="Корзина" value="Trash">Корзина</li>
          <ul>
          </div>
-         <button type="button" name="button">Показать</button>
-     </section>
+         <input type="submit" name="Показать" value="Показать">
+     </form>
 
 <!-- Сайты -->
  <section>
