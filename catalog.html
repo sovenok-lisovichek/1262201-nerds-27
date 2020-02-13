@@ -3,31 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
 
 
 <!-- Хедер -->
- <header>
-   <a href="index.html">
-   <img src="nerds-logo.svg" width="160" height="67" alt="логотип">
- </a>
-   <nav>
-     <ul>
-       <li><a href="studio.html">Студия</a></li>
-       <li><a href="clients.html">Клиенты</a></li>
-       <li><a href="catalog.html">Магазин</a></li>
-       <li><a href="contacts.html">Контакты</a></li>
-     </ul>
-     <a href="basket.html">
-       <img src="img/cart-icon.svg" alt="basket">
-       Корзина</a>
-   </nav>
- </header>
+<header>
+  <a href="index.html">
+  <img src="img/nerds-logo.svg" width="160" height="67" alt="логотип">
+</a>
+  <nav class="main-navigation">
+    <ul class="site-nav">
+      <li class="user-nav"><a href="studio.html" class="menu-link">Студия</a></li>
+      <li class="user-nav"><a href="clients.html" class="menu-link">Клиенты</a></li>
+      <li class="user-nav"><a href="catalog.html" class="menu-link">Магазин</a></li>
+      <li class="user-nav"><a href="contacts.html" class="menu-link">Контакты</a></li>
+    </ul>
+    <a href="basket.html">Корзина</a>
+  </nav>
+</header>
 
 <main>
 <!-- Дескрипт -->
- <section>
+ <section class="descpript">
   <h1>Магазин готовых шаблонов</h1>
  </section>
 
@@ -36,9 +36,13 @@
   </section>
    -->
 
-   <form class="filter" method="post" action="#">
+   <form class="filter" method="post" action="#" oninput="sumoutput.value=sumcount.value">
      <div>
        <p>Сетка</p>
+       <section>
+         <input type="range" min="1 000" max="15 000" step="1 000" id="sumcount" name="sumcount">
+         <output name="sumoutput"></output>
+       </section>
        <ul>
          <li>
            <input type="radio" name="grid-filter" value="adaptive" id="adaptive" checked>
@@ -86,6 +90,11 @@
 
       <li>
        <div class="card">
+         <div class="browser">
+           <div id="circle"></div>
+           <div id="circle"></div>
+           <div id="circle"></div>
+         </div>
          <img src="img/sedona.png" alt="Седона" width="360" height="616">
          <h3>Sedona</h3>
          <p>Информационный сайт для туристов</p>
@@ -94,7 +103,12 @@
       </li>
 
       <li>
-        <div class="card">
+          <div class="card">
+            <div class="browser">
+              <div id="circle"></div>
+              <div id="circle"></div>
+              <div id="circle"></div>
+            </div>
           <img src="img/pink.png" alt="Пинк" width="360" height="616">
           <h3>Pink</h3>
           <p>Информационный сайт для маникюра</p>
@@ -104,6 +118,11 @@
 
       <li>
         <div class="card">
+          <div class="browser">
+            <div id="circle"></div>
+            <div id="circle"></div>
+            <div id="circle"></div>
+          </div>
           <img src="img/barber.png" alt="Барбершоп" width="360" height="616">
           <h3>Barbershop</h3>
           <p>Информационный сайт для хипстеров</p>
@@ -113,6 +132,11 @@
 
       <li>
         <div class="card">
+          <div class="browser">
+            <div id="circle"></div>
+            <div id="circle"></div>
+            <div id="circle"></div>
+          </div>
           <img src="img/mishka.png" alt="Мишка" width="360" height="616">
           <h3>Mishka</h3>
           <p>Информационный сайт для мишек</p>
@@ -122,6 +146,11 @@
 
       <li>
         <div class="card">
+          <div class="browser">
+            <div id="circle"></div>
+            <div id="circle"></div>
+            <div id="circle"></div>
+          </div>
           <img src="img/school.png" alt="Школа" width="360" height="616">
           <h3>School</h3>
           <p>Информационный сайт для школьнков</p>
@@ -131,6 +160,11 @@
 
       <li>
         <div class="card">
+          <div class="browser">
+            <div id="circle"></div>
+            <div id="circle"></div>
+            <div id="circle"></div>
+          </div>
           <img src="img/beer.png" alt="Пиво" width="360" height="616">
           <h3>Beer</h3>
           <p>Информационный сайт для пивка</p>
@@ -156,16 +190,18 @@
   <!-- Контакты и карта -->
   <h2>Контакты</h2>
       <section>
-      </div>
-      <p>NЁRDS DESIGN STUDIO</p>
+      <div class="contact-card">
+      <p class="h3-contact">NЁRDS DESIGN STUDIO</p>
       <p>191186, Санкт-Петербург,<br>
  ул. Б. Конюшенная, д. 19/8  <br>
          <br>
          тел. +7 (812) 275-75-75
+         <button type="button" name="button" class="button">Напишите нам</button>
     </div>
     <img src="marker.jpg" alt="маркер для карты">
     <img src="map.jpg" alt="тут должна быть карта" width="1440" height="416">
       </section>
+
 
 
       <!-- Футер -->
@@ -188,7 +224,7 @@
         </li>
       </ul>
        <div class="title-1">
-        <p>Давайте жить дружно</p>
+        <p class="friend">Давайте жить дружно</p>
         <p>Скидка 10% для друзей из социальных сетей</p>
        </div>
     </footer>
