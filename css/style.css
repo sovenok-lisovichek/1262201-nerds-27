@@ -1,7 +1,199 @@
-.slide-1 {
-background-color: #EEEEEE;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  background-color: white;
 }
 
-.description {
-  background-color: #EEEEEE;
+button {
+  font: inherit;
+
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #FB565A;
+  border: none;
+  padding-left:
 }
+
+button:hover {
+background-color: #E74246;
+}
+button:active{
+  background-color: #D7373B;
+}
+
+h1 {
+  font-size: 55px;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+li {
+  list-style: none;
+}
+/* Хедер */
+.main-navigation {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.site-nav,
+.user-nav {
+  list-style: none;
+}
+.site-nav,
+.user-nav a{
+  color: #000000;
+}
+
+.site-nav a:hover,
+.site-nav a:focus,
+.user-nav a:hover,
+.user-nav a:focus {
+ color: #FB565A;
+}
+
+/* Главный блок */
+
+
+/* Предложения */
+
+.offers h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+.offers {
+  list-style: none;
+}
+
+.offers p {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.button-green {
+  background-color: #00CA74;
+  text-transform: uppercase;
+}
+.button-green:hover {
+  background-color: #00BC6C;
+}
+.button-green:focus {
+  background-color: #00AA62;
+}
+
+.button-yellow {
+  background-color: #EFC84A;
+}
+.button-yellow:hover {
+  background-color: #EAB534;
+}
+
+.button-yellow:focus {
+  background-color: #E5A722;
+}
+/* О компании */
+
+.h2-about {
+  font-size: 45px;
+  line-height: 45px;
+}
+.all-skills,
+.skills
+
+/* Цифры */
+
+.numbers {
+  list-style: none;
+}
+.big-numbers {
+  font-size: 45px;
+  line-height: 10px;
+}
+sup {
+  font-size: 26px;
+}
+
+/* Партнеры */
+
+li.partners {
+  list-style: none;
+}
+
+/*Контакты и карты */
+
+.contact-card {
+  background-color: #ffffff;
+}
+
+.h3-contact {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+/* Футер */
+
+footer a {
+  background: #E1E1E1;
+}
+
+footer a:hover {
+  background-color: #E74246;
+}
+
+footer a:focus {
+  background-color: #D7373B;
+}
+
+.friend {
+  font-size:36px;
+}
+
+
+
+
+/* КАТАЛОГ */
+
+.descpript h1 {
+  font-size: 55px;
+  color: #ffffff;
+}
+
+.browser {
+  background-color: #EAEAEA;
+}
+
+#circle {
+    width: 14px;
+    height: 14px;
+    background: #ffffff;
+    border-radius: 14px;
+  }
+
+  .pagination a {
+    background-color: #EEEEEE;
+  }
+  .pagination a:hover {
+    background-color: #DFDFDF;
+  }
+  .pagination a:focus {
+    background-color: #ffffff;
+  }
+  .pagination a:active {
+    background-color: #ffffff;
+    border-style: solid 3px #DBDBDB;
+  }
