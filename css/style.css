@@ -37,6 +37,16 @@ a {
   text-transform: uppercase;
   color: #000000;
 }
+a:hover {
+  color: #FB565A;
+}
+a:focus {
+}
+a:active{
+  color: #000000;
+  border-bottom: 2px solid #FB565A;
+  padding-bottom: 24px;
+}
 
 li {
   list-style: none;
@@ -55,16 +65,31 @@ li {
   list-style: none;
 }
 .site-nav,
+.site-nav a:hover,
+.site-nav a:focus,
 .user-nav a{
   color: #000000;
 }
-
-.site-nav a:hover,
-.site-nav a:focus,
-.user-nav a:hover,
+.user-nav a:hover {
+  color: #FB565A;
+}
+.user-nav a:active {
+  color: #000000;
+  border-bottom: 2px solid #FB565A;
+  padding-bottom: 24px;
+}
 .user-nav a:focus {
  color: #FB565A;
 }
+
+.basket a:{
+  color: #000000;
+}
+.basket a:hover{
+
+}
+.basket a:focus,
+.basket a:active {}
 
 /* Главный блок */
 
@@ -108,7 +133,7 @@ li {
 }
 /* О компании */
 
-.h2-about {
+.about-header {
   font-size: 45px;
   line-height: 45px;
 }
@@ -140,7 +165,7 @@ li.partners {
   background-color: #ffffff;
 }
 
-.h3-contact {
+.contact-header {
   font-size: 18px;
   text-transform: uppercase;
 }
@@ -177,7 +202,7 @@ footer a:focus {
   background-color: #EAEAEA;
 }
 
-#circle {
+.class {
     width: 14px;
     height: 14px;
     background: #ffffff;
