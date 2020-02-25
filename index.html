@@ -11,9 +11,11 @@
 
 
 <!-- Хедер -->
- <header>
-   <a href="index.html">
-   <img src="img/nerds-logo.svg" width="160" height="67" alt="логотип">
+<header class="main-header">
+   <div class="container">
+       <div class="all-header">
+   <a href="index.html" class="logo-header">
+   <img src="img/nerds-logo.svg" width="156" height="64" alt="логотип">
  </a>
    <nav class="main-navigation">
      <ul class="site-nav">
@@ -22,30 +24,35 @@
        <li class="user-nav"><a href="catalog.html" class="menu-link">Магазин</a></li>
        <li class="user-nav"><a href="contacts.html" class="menu-link">Контакты</a></li>
      </ul>
-     <a href="basket.html"><img src="img/cart-icon" alt="basket" class="basket">Корзина</a>
    </nav>
+   <a href="basket.html"><img src="img/cart-icon.svg" alt="basket" class="basket">Корзина</a>
+</div>
+</div>
  </header>
 
 
  <!-- Раздел"Главная""-->
- <main>
-    <section>
-      <div class="slide-1">
-      <h1>Долго, дорого, скурпулёзно</h1>
+
+ <main class="container">
+   <div class="slide-1">
+    <section class="index-slide">
+        <div class="text-1">
+      <h1>Долго, дорого, <br> скурпулёзно</h1>
       <p>Математически выверенный дизайн
         для вашего сайта или мобильного приложения</p>
         <a href="#" class="button-red">Узнать больше</a>
-        <img src="image.png" width="1129" height="413"
-        alt="картинка">
+      </div>
+        <img src="img/slide1.png" width="698" height="413"
+        alt="Телефоны" class="img-slide-1">
       </div>
     </section>
 
 
 <!-- Раздел "Предложения"-->
    <section>
-     <h2>Предложения</h2>
+     <!-- <h2>Предложения</h2>-->
 
-       <ul  class="all-offers">
+       <ul class="all-offers">
          <li class="offers">
            <img src="img/web.png" alt="Веб-сайты" width="300" height="146">
            <h3>Веб-сайты</h3>
@@ -73,7 +80,8 @@
 
 
    <!-- Раздел "О компании" -->
-   <h2>О компании</h2>
+   <!-- <h2>О компании</h2> -->
+   <div class="index-column">
    <section class="about-company">
      <p class="about-header">Мы — маленькая, но гордая<br>
         дизайн студия из Краснодара</p>
@@ -91,7 +99,7 @@
           <section class="numbers-company">
             <img src="img/nerds.png" width="360" width="208" alt="Нёрдс">
             <p>C 2004 любим точность во всём:</p>
-            <ul>
+            <ul class="all-numbers">
               <li class="numbers">
                 <p class="big-numbers">146<sup>%</sup></p>
                 <p>Уровень самоотдачи</p>
@@ -106,12 +114,12 @@
             </li>
             </ul>
           </section>
+        </div>
 
-       <hr color="grey" width="200" align="left">
 
 <!-- Логотипы партнёров -->
-          <section>
-            <ul>
+          <section class="partners-section">
+            <ul class="all-partners">
               <li class="partners">
                 <a href="#">
                 <img src="img/html-logo.png" width="200" height="68" alt="логотип партнёра-1">
@@ -138,8 +146,9 @@
 </main>
 
 <!-- Контакты и карта -->
-<h2>Контакты</h2>
-    <section>
+<!-- <h2>Контакты</h2> -->
+    <section class="contacts">
+      <div class="container">
     <div class="contact-card">
     <p class="contact-header">NЁRDS DESIGN STUDIO</p>
     <p>191186, Санкт-Петербург,<br>
@@ -150,11 +159,14 @@
   </div>
   <img src="marker.jpg" alt="маркер для карты">
   <img src="map.jpg" alt="тут должна быть карта" width="1440" height="416">
+</div>
     </section>
 
 
     <!-- Футер -->
-    <footer>
+    <footer class="main-footer">
+      <div class="container">
+      <div class="social-network">
     <ul>
       <li>
         <a href="#">
@@ -172,10 +184,12 @@
         </a>
       </li>
     </ul>
+  </div>
      <div class="title-1">
       <p class="friend">Давайте жить дружно</p>
       <p>Скидка 10% для друзей из социальных сетей</p>
      </div>
+   </div>
   </footer>
 
   </body>
