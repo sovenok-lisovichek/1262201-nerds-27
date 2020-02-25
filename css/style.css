@@ -30,6 +30,7 @@ button:active{
 
 h1 {
   font-size: 55px;
+  line-height: 55px;
 }
 
 a {
@@ -51,18 +52,50 @@ a:active{
 li {
   list-style: none;
 }
+
+
 /* Хедер */
-.main-navigation {
+.main-header {
+  padding-top: 48px;
+  background-color: #EEEEEE;
+  margin-bottom: 20px;
+
   font-size: 16px;
   line-height: 20px;
-  color: #000000;
 
-  background-color: #ffffff;
+  min-width: 64px;
+
 }
 
-.site-nav,
+.all-header {
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.all-header-test {
+  display: flex;
+  justify-content: space-between;
+}
+.basket {
+  width: auto;
+}
+.main-navigation {
+  width: auto;
+}
+
+.logo-header {
+  width: auto;
+}
+.site-nav {
+}
 .user-nav {
   list-style: none;
+  display: inline;
+  padding-right: 48px;
 }
 .site-nav,
 .site-nav a:hover,
@@ -92,9 +125,51 @@ li {
 .basket a:active {}
 
 /* Главный блок */
+.index-slide {
+  background-color: #EEEEEE;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
 
+.text-1 {
+  width: 416px;
+}
+
+
+.button-red {
+  font: inherit;
+
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #FB565A;
+  border: none;
+  padding-left:
+}
+
+.button-red:hover {
+background-color: #E74246;
+}
+.button-red:active{
+  background-color: #D7373B;
+}
 
 /* Предложения */
+
+.all-offers {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  border-bottom: 1px solid #EEEEEE;
+}
 
 .offers h3 {
   font-size: 24px;
@@ -102,6 +177,9 @@ li {
 }
 .offers {
   list-style: none;
+  display: inline;
+  width: 300px;
+  padding-right: 100px;
 }
 
 .offers p {
@@ -133,17 +211,43 @@ li {
 }
 /* О компании */
 
+.index-column {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 40px;
+  padding-bottom: 72px;
+  border-bottom: 1px solid #EEEEEE;
+}
+.about-company {
+  width: 756px;
+}
 .about-header {
   font-size: 45px;
   line-height: 45px;
+  min-width: 756px;
 }
+
 .all-skills,
 .skills
 
 /* Цифры */
-
+.numbers-company {
+  width: 360px;
+}
+.numbers-company p {
+  text-transform: uppercase;
+}
+.all-numbers {
+  display: flex;
+  justify-content: space-between;
+}
 .numbers {
   list-style: none;
+  display: inline;
+}
+.numbers p {
+  text-transform: none;
 }
 .big-numbers {
   font-size: 45px;
@@ -154,9 +258,20 @@ sup {
 }
 
 /* Партнеры */
+.partners-section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.all-partners {
+  display: flex;
+  justify-content: space-between;
+}
 
 li.partners {
   list-style: none;
+  display: inline;
 }
 
 /*Контакты и карты */
@@ -171,7 +286,17 @@ li.partners {
 }
 
 /* Футер */
+.main-footer {
+  margin-top: 0px;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  background-color: #EEEEEE;
+}
 
+.social-network {
+  width: 262px;
+  margin-right: 138px;
+}
 footer a {
   background: #E1E1E1;
 }
@@ -184,10 +309,20 @@ footer a:focus {
   background-color: #D7373B;
 }
 
+.social-network li {
+  display: inline;
+}
+
 .friend {
   font-size:36px;
 }
+.title-1 {
+  width: 650px;
+}
 
+.main-footer .container {
+  display: flex;
+}
 
 
 
