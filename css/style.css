@@ -10,15 +10,19 @@ body {
 
 button {
   font: inherit;
+  color: white;
 
   text-align: center;
-  color: white;
   vertical-align: middle;
+
   text-transform: uppercase;
 
   background-color: #FB565A;
   border: none;
-  padding-left:
+
+  width: 160px;
+  height: 50px;
+  border-radius: 2px;
 }
 
 button:hover {
@@ -30,7 +34,7 @@ button:active{
 
 h1 {
   font-size: 55px;
-  line-height: 55px;
+  line-height: 48px;
 }
 
 a {
@@ -58,7 +62,7 @@ li {
 .main-header {
   padding-top: 48px;
   background-color: #EEEEEE;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 
   font-size: 16px;
   line-height: 20px;
@@ -109,7 +113,7 @@ li {
 .user-nav a:active {
   color: #000000;
   border-bottom: 2px solid #FB565A;
-  padding-bottom: 24px;
+  padding-bottom: 12px;
 }
 .user-nav a:focus {
  color: #FB565A;
@@ -122,22 +126,37 @@ li {
 
 }
 .basket a:focus,
-.basket a:active {}
+.basket a:active {
+  color: #000000;
+  border-bottom: 2px solid #FB565A;
+  padding-bottom: 12px;
+}
+
+
+
 
 /* Главный блок */
 .index-slide {
-  background-color: #EEEEEE;
-  margin: 0;
+  margin: 0px;
   display: flex;
   justify-content: space-between;
+}
+
+.slide-1 {
+  background-color: #EEEEEE;
 }
 
 .text-1 {
   width: 416px;
 }
 
+.text-1 h1 {
+  padding-top: 75px;
+  font-size: 55px;
+  line-height: 55px;
+}
 
-.button-red {
+.slide-1 a {
   font: inherit;
 
   text-align: center;
@@ -146,8 +165,10 @@ li {
   text-transform: uppercase;
 
   background-color: #FB565A;
-  border: none;
-  padding-left:
+
+  width: 260px;
+  height: 50px;
+  border-radius: 2px;
 }
 
 .button-red:hover {
@@ -229,6 +250,10 @@ background-color: #E74246;
 }
 
 .all-skills,
+.about-company ul {
+  padding: 0px;
+  margin-left: 0px;
+}
 .skills
 
 /* Цифры */
@@ -272,10 +297,18 @@ sup {
 li.partners {
   list-style: none;
   display: inline;
+  opacity: 0.3;
+}
+li.partners:hover {
+  opacity: 1;
 }
 
 /*Контакты и карты */
 
+.contacts {
+  background-image: url(img/contacts.png);
+  background-image: inherit;
+}
 .contact-card {
   background-color: #ffffff;
 }
@@ -309,8 +342,8 @@ footer a:focus {
   background-color: #D7373B;
 }
 
-.social-network li {
-  display: inline;
+.social-network ul {
+  display: flex;
 }
 
 .friend {
@@ -326,34 +359,131 @@ footer a:focus {
 
 
 
-/* КАТАЛОГ */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* КАТАЛОГ */
+.descpript {
+  background-color: #EEEEEE;
+  margin: 0;
+}
 .descpript h1 {
   font-size: 55px;
-  color: #ffffff;
+  color: #000000;
+  margin: 0;
+  text-align: center;
+  height: 56px;
+  padding-top: 68px;
+  padding-bottom: 118px;
 }
+
+/* Фильтр */
+.filter {
+  width: 264px;
+}
+
+.all-shop p {
+  text-transform: uppercase;
+}
+.all-shop ul {
+  margin-left: 0px;
+  padding: 0px;
+}
+.all-shop li {
+  padding-bottom: 16px;
+}
+
 
 .browser {
   background-color: #EAEAEA;
+  width: 360px;
+  height: 40px;
+  border-radius: 4px 4px 0px 0px;
 }
 
-.class {
+.сircle {
     width: 14px;
     height: 14px;
     background: #ffffff;
     border-radius: 14px;
   }
 
-  .pagination a {
+.button-filter {
+  background-color: #EEEEEE;
+  border: none;
+
+  font-size: 16px;
+  line-height: 18px;
+
+  width: 260px;
+  height: 50px;
+  border-radius: 2px;
+
+  text-transform: uppercase;
+
+}
+/* Сайты */
+.all-sites {
+width: 760px;
+}
+
+.all-shop {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.all-sites ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-left: 0;
+
+}
+.all-sites li {
+  width: 360px;
+}
+
+.pagination {
+  width: 440px;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.pagination a {
+    width: 50px;
+    height: 50px;
     background-color: #EEEEEE;
+
+    text-align: center;
+    vertical-align: middle;
   }
-  .pagination a:hover {
+.pagination a:hover {
     background-color: #DFDFDF;
   }
-  .pagination a:focus {
+.pagination a:focus {
     background-color: #ffffff;
   }
-  .pagination a:active {
+.pagination a:active {
     background-color: #ffffff;
     border-style: solid 3px #DBDBDB;
   }
