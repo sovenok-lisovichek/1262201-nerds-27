@@ -11,22 +11,28 @@
 
 
 <!-- Хедер -->
-<header>
-  <a href="index.html">
-  <img src="img/nerds-logo.svg" width="160" height="67" alt="логотип">
-</a>
-  <nav class="main-navigation">
-    <ul class="site-nav">
-      <li class="user-nav"><a href="studio.html" class="menu-link">Студия</a></li>
-      <li class="user-nav"><a href="clients.html" class="menu-link">Клиенты</a></li>
-      <li class="user-nav"><a href="catalog.html" class="menu-link">Магазин</a></li>
-      <li class="user-nav"><a href="contacts.html" class="menu-link">Контакты</a></li>
-    </ul>
-    <a href="basket.html" class="basket">Корзина</a>
-  </nav>
-</header>
+<header class="main-header">
+   <div class="container">
+       <div class="all-header">
+   <a href="index.html" class="logo-header">
+   <img src="img/nerds-logo.svg" width="156" height="64" alt="логотип">
+ </a>
+   <nav class="main-navigation">
+     <ul class="site-nav">
+       <li class="user-nav"><a href="studio.html" class="menu-link">Студия</a></li>
+       <li class="user-nav"><a href="clients.html" class="menu-link">Клиенты</a></li>
+       <li class="user-nav"><a href="catalog.html" class="menu-link">Магазин</a></li>
+       <li class="user-nav"><a href="contacts.html" class="menu-link">Контакты</a></li>
+     </ul>
+   </nav>
+   <a href="basket.html">
+     <img src="img/cart-icon.svg" alt="basket" class="basket">
+     Корзина</a>
+</div>
+</div>
+ </header>
 
-<main>
+<main class="container">
 <!-- Дескрипт -->
  <section class="descpript">
   <h1>Магазин готовых шаблонов</h1>
@@ -36,15 +42,14 @@
 <section>
   </section>
    -->
-
+<div class="all-shop">
    <form class="filter" method="post" action="https://echo.htmlacademy.ru">
-     <div>
-       <p>Сетка</p>
        <section>
          <input type="range" min="1 000" max="15 000" step="1 000" id="sumcount" name="sumcount">
          <output name="sumoutput"></output>
        </section>
-       <ul>
+       <p>Сетка</p>
+       <ul class="flex-filter">
          <li>
            <input type="radio" name="grid-filter" value="adaptive" id="adaptive" checked>
            <label for="adaptiv">Адаптивная</label>
@@ -58,11 +63,10 @@
            <label for="rez">Резиновая</label>
          </li>
          </ul>
-       </div>
 
     <p>Особенности</p>
        <div>
-         <ul>
+         <ul class="features-filter">
            <li>
              <input type="checkbox" name="Slide" value="Slide" id="slide" checked>
              <label for="slide">Слайдер</label>
@@ -82,13 +86,12 @@
            <li><input type="checkbox" name="Basket" value="Trash">Корзина</li>
          <ul>
          </div>
-         <input type="submit" name="Показать" value="Показать">
+         <input type="submit" name="Показать" value="Показать" class="button-filter">
      </form>
 
 <!-- Сайты -->
- <section>
+ <section class="all-sites">
     <ul>
-
       <li>
        <div class="card">
          <div class="browser">
@@ -173,40 +176,44 @@
         </div>
       </li>
     </ul>
-
+    <!-- Пагинация-->
+    <div class="pagination">
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">Следующая</a>
+    </div>
+      </body>
 </section>
-
-
-<!-- Пагинация-->
-<div class="pagination">
-  <a href="#">1</a>
-  <a href="#">2</a>
-  <a href="#">3</a>
-  <a href="#">Следующая</a>
 </div>
-  </body>
+
+
+
 
 </main>
 
   <!-- Контакты и карта -->
-  <h2>Контакты</h2>
-      <section>
-      <div class="contact-card">
-      <p class="contact-header">NЁRDS DESIGN STUDIO</p>
-      <p>191186, Санкт-Петербург,<br>
+  <section class="contacts">
+    <div class="container">
+  <div class="contact-card">
+  <p class="contact-header">NЁRDS DESIGN STUDIO</p>
+  <p>191186, Санкт-Петербург,<br>
  ул. Б. Конюшенная, д. 19/8  <br>
-         <br>
-         тел. +7 (812) 275-75-75
-         <button type="button" name="button" class="button">Напишите нам</button>
-    </div>
-    <img src="marker.jpg" alt="маркер для карты">
-    <img src="map.jpg" alt="тут должна быть карта" width="1440" height="416">
-      </section>
+     <br>
+     тел. +7 (812) 275-75-75<br>
+     <button type="button" name="button" class="button">Напишите нам</button>
+</div>
+<img src="marker.jpg" alt="маркер для карты">
+<img src="map.jpg" alt="тут должна быть карта" width="1440" height="416">
+</div>
+  </section>
 
 
 
       <!-- Футер -->
-      <footer>
+      <footer class="main-footer">
+        <div class="container">
+        <div class="social-network">
       <ul>
         <li>
           <a href="#">
@@ -224,11 +231,12 @@
           </a>
         </li>
       </ul>
+    </div>
        <div class="title-1">
         <p class="friend">Давайте жить дружно</p>
         <p>Скидка 10% для друзей из социальных сетей</p>
        </div>
+     </div>
     </footer>
-
 
 </html>
